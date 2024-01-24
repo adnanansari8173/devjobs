@@ -217,7 +217,10 @@ const Jobs = () => {
               </div>
               <div className="flex items-center gap-4 p-6">
                 <div>
-                  <Checkbox />
+                  <Checkbox
+                    checked={isFullTime}
+                    onClick={() => setIsFullTime(!isFullTime)}
+                  />
                 </div>
                 <div className="font-bold">Full Time Only</div>
               </div>
